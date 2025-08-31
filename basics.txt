@@ -1,0 +1,3 @@
+What is Linux Shell?
+
+A shell provide an environment to a user to a execute commands  and interact with a kernel.
