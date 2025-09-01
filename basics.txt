@@ -1,3 +1,31 @@
 What is Linux Shell?
 
 A shell provide an environment to a user to a execute commands  and interact with a kernel.
+
+There are different types of shell
+1.bash
+2.sh
+3.ksh
+4.tsh
+5.fish
+6.zsh
+
+Bash is commonly used shell.
+
+SOME THINGS YOU CAN DO BEFORE STARTING OFF:
+
+You can check your shell type using "echo $0".
+you can also check your os distro in os-release which is in etc/os-release.
+To check that other shells are supported in your terminal or not , go to etc/shells.
+
+What is shell scripting?
+
+Shell script consits of set of commands to perform a task.All the commands execute sequentially.Tasks like file manipulation,program execution, user interactions, automation of tasks can be done.
+
+#!/bin/bash - what does this means??
+
+(#!)- Shebang or hashbang
+syntax: #!/path/to/interpreter
+We use shebang at the very top of a script file to tell the operating system which interpreter should be used to execute that script.
+/path/to/interpreter - is the absolute path to the program that should interpret the file.
+#!/bin/bash - tells the OS to use Bash shell to execute the script.
