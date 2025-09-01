@@ -19,7 +19,6 @@ you can also check your os distro in os-release which is in etc/os-release.
 To check that other shells are supported in your terminal or not , go to etc/shells.
 
 What is shell scripting?
-
 Shell script consits of set of commands to perform a task.All the commands execute sequentially.Tasks like file manipulation,program execution, user interactions, automation of tasks can be done.
 
 #!/bin/bash - what does this means??
@@ -29,3 +28,54 @@ syntax: #!/path/to/interpreter
 We use shebang at the very top of a script file to tell the operating system which interpreter should be used to execute that script.
 /path/to/interpreter - is the absolute path to the program that should interpret the file.
 #!/bin/bash - tells the OS to use Bash shell to execute the script.
+
+HOW TO RUN A SCRIPT??
+
+make sure script has execute permissions "rwx".
+Run using :
+./script.sh
+/path/script.sh
+bash script.sh
+
+Now lets first come to permissions,how to check which permissions your script has?
+using -> "ls -ltr".
+now you might be seeing something in form of r w or x if js sarted off maybe r w.
+so ,
+r -> Read
+w -> Write
+x -> Execute
+
+and they apply to three groups :
+ u -> users(owner)
+ g -> groups
+ o -> others
+
+For example: rw- r-- r--
+rw- -> owners can read and write.
+r-- -> group can only read.
+r-- -> others can only read.
+
+No x means it cannot be execurted.
+how to make it executable?
+using chmod(change mode).
+chmod +x myscript.sh
+
+SOME COMMON SETTINGS:
+
+chmod +x file -> add execute permissions for everyone.
+chmod u+x file -> add execute permissions on;y for owner.
+chmod 755 file -> owner can read write and execute . others can only read and execute.
+chmod 700 file -> Only owner can read write and execute(private script).
+
+COMMENTS:
+
+Using # 
+# this is a comment
+
+Multi-line comment
+<<comment 
+....
+your comment here 
+....
+
+comment
